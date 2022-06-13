@@ -70,29 +70,6 @@ app.get("/rockets/:rocket_id", async (req, res, next) => {
 });
 
 
-// app.get("/rockets", async (req, res, next) => {
-//     try {
-//         const reply = await GET_ASYNC("rockets");
-//         if (reply) {
-//             console.log("using cached data");
-//             res.send(JSON.parse(reply));
-//             return;
-//         }
-        
-//         const respone = await axios.get("https://api.spacexdata.com/v3/rockets");
-//         const saveResult = await SET_ASYNC(
-//             "rockets",
-//             JSON.stringify(respone.data),
-//             "EX",
-//             5
-//         );
-//         console.log("new data cached", saveResult);
-//         res.send(respone.data);
-//     } catch (error) {
-//         res.send(error.message);
-//     }
-// });
 
-
-app.listen(3000, () => console.log("🚀 on port 3000"));
+app.listen( process.env.PORT || 3000, () => console.log("🚀 on port 3000"));
 

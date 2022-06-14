@@ -77,7 +77,7 @@ app.get('/', (req, res) => {
 // app.listen( process.env.PORT || 3000, () => console.log("🚀 on port 3000"));
 
 
-const hostname = '20.232.206.70';
+const hostname = '127.0.0.1';
 const port = 5000;
 
 app.listen(port, hostname, () => {

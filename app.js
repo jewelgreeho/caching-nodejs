@@ -74,15 +74,15 @@ app.get('/', (req, res) => {
   })
 
   
-// app.listen( process.env.PORT || 3000, () => console.log("🚀 on port 3000"));
+app.listen( process.env.PORT || 80, () => console.log("🚀 on port 3000"));
 
 
-const hostname = '127.0.0.1';
-const port = 5000;
+// const hostname = '127.0.0.1';
+// const port = 80;
 
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+// app.listen(port, hostname, () => {
+//   console.log(`Server running at http://${hostname}:${port}/`);
+// });
 
 
 // const http = require('http')

@@ -70,7 +70,7 @@ app.get("/rockets/:rocket_id", async (req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-    res.send('Hello World!!')
+    res.send('Hello Jewel!!')
   })
 
   
